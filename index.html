@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Books</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        // Detect page refresh event
+        if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+          // Redirect to new page
+          window.location = "search-history.html";
+        }
+      </script>
+  </head>
+  <body>
+    <h1>Search Books</h1>
+    <form id="search-form">
+      <label for="search-input">Enter a book title or author name:</label>
+      <input type="text" id="search-input" name="search-input" />
+      <button type="submit">Search</button>
+    </form>
+    <div id="search-results"></div>
+   
+    <ul id="search-history"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
